@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trançahê Studio | Tranças nagô em Conceição da Barra – ES</title>
+  <meta name="description" content="Tranças com amor e personalidade. Nagô natural para iniciantes, com tabela de preços e agendamento pelo WhatsApp.">
+  <meta name="theme-color" content="#0b0807">
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topo">
+  <a class="marca" href="#inicio" aria-label="Trançahê Studio, início">
+    <img src="assets/logo.jpg" alt="" width="48" height="48">
+    <span>Trançahê Studio</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="menu-principal" aria-label="Principal">
+    <a href="#servico">Serviço</a>
+    <a href="#precos">Preços</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#agendar">Agendar</a>
+  </nav>
+  <a class="botao botao-pequeno" data-whatsapp href="#agendar">Agendar</a>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <div class="hero-texto">
+      <p class="assinatura">Tranças com amor e personalidade ♡</p>
+      <h1>Seu cabelo,<br>sua identidade.</h1>
+      <p class="lead">Nagô natural feito com cuidado, do primeiro ao último fio. Veja os preços, escolha o tamanho e chame no WhatsApp para marcar.</p>
+      <div class="acoes">
+        <a class="botao" data-whatsapp href="#agendar">Agendar pelo WhatsApp</a>
+        <a class="link" href="#precos">Ver tabela de preços</a>
+      </div>
+    </div>
+    <figure class="hero-foto">
+      <img src="assets/hero.jpg" alt="Mulher de perfil com nagô natural e tranças longas soltas nas pontas" width="720" height="1274" fetchpriority="high">
+    </figure>
+  </section>
+
+  <section class="secao" id="servico">
+    <div class="miolo estreito">
+      <h2>Nagô natural para iniciantes</h2>
+      <p>Tranças simples, lindas e cheias de atitude. Perfeitas para quem está começando a se apaixonar por esse estilo.</p>
+      <p class="nota">O valor muda conforme a quantidade de tranças. Confira a tabela abaixo.</p>
+    </div>
+  </section>
+
+  <section class="secao escura" id="precos">
+    <div class="miolo estreito">
+      <h2>Tabela de preços</h2>
+      <p class="sub">Nagô natural para iniciantes</p>
+      <ul class="tabela" id="tabela-precos">
+        <!-- Preenchida por js/script.js (edite os valores lá em CONFIG.precos) -->
+      </ul>
+      <a class="botao" data-whatsapp href="#agendar">Quero agendar</a>
+    </div>
+  </section>
+
+  <section class="secao" id="trabalhos">
+    <div class="miolo">
+      <h2>Trabalhos realizados</h2>
+      <p class="sub">Toque em uma foto para ampliar.</p>
+      <div class="galeria" id="galeria">
+        <button type="button" class="foto alta" data-src="assets/galeria/trabalho-01.jpg" data-alt="Detalhe do nagô lateral com tranças e piercings de alumínio">
+          <img src="assets/galeria/trabalho-01.jpg" alt="Detalhe do nagô lateral com tranças e piercings de alumínio" loading="lazy">
+        </button>
+        <button type="button" class="foto alta" data-src="assets/galeria/trabalho-02.jpg" data-alt="Nagô em coração com tranças soltas em cabelo cacheado">
+          <img src="assets/galeria/trabalho-02.jpg" alt="Nagô em coração com tranças soltas em cabelo cacheado" loading="lazy">
+        </button>
+        <button type="button" class="foto alta" data-src="assets/galeria/trabalho-03.jpg" data-alt="Nagô lateral com tranças longas e pontas onduladas">
+          <img src="assets/galeria/trabalho-03.jpg" alt="Nagô lateral com tranças longas e pontas onduladas" loading="lazy">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao escura" id="agendar">
+    <div class="miolo estreito">
+      <h2>Como agendar</h2>
+      <p>Chame no direct ou no WhatsApp e escolha seu horário.</p>
+      <dl class="info">
+        <div><dt>Atendimento</dt><dd>Segunda a sexta, das 14h às 19h</dd></div>
+        <div><dt>Local</dt><dd>Barbearia da Hora<br>São Joaquim, Conceição da Barra – ES</dd></div>
+      </dl>
+      <a class="botao" data-whatsapp href="#agendar">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <img src="assets/logo.jpg" alt="Trançahê Studio" width="72" height="72">
+  <p>Tranças com amor e personalidade ♡</p>
+  <p class="pequeno">© <span id="ano"></span> Trançahê Studio</p>
+</footer>
+
+<a class="flutuante botao" data-whatsapp href="#agendar" aria-label="Agendar pelo WhatsApp">WhatsApp</a>
+
+<dialog id="lightbox" aria-label="Foto ampliada">
+  <button type="button" class="fechar" id="fechar" aria-label="Fechar foto">Fechar</button>
+  <img id="lightbox-img" src="" alt="">
+</dialog>
+
+<script src="js/script.js"></script>
+</body>
+</html>
